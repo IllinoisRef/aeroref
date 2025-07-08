@@ -1,4 +1,4 @@
-# BioeRef
+# AeroRef
 
 Index:
 <ul>
@@ -20,7 +20,7 @@ Index:
 
 ### Installing required programs
 
-Download <a href="https://github.com/apps/desktop">GitHub Desktop</a>. Once installed, login using the GitHub account with which you have collaborator access to the bioeref repository. Once logged in clone the bioeref repository.
+Download <a href="https://github.com/apps/desktop">GitHub Desktop</a>. Once installed, login using the GitHub account with which you have collaborator access to the aeroref repository. Once logged in clone the aeroref repository.
 
 Download <a href="https://nodejs.org/en/download/prebuilt-installer">NodeJS</a>. By default, the installer should also install Node Package Manager/NPM, but double check that is the case.
 
@@ -28,9 +28,9 @@ Download <a href="https://nodejs.org/en/download/prebuilt-installer">NodeJS</a>.
 
 Open the Windows command prompt (Windows key + R and type in `cmd`, or type in `cmd` in the search menu.) Make sure it is not ran as administrator, such that the first line reads `C:\Users\<user>`, where `<user>` is the username of the current Windows user.
 
-By default, the repository should be at `C:\Users\<user>\Documents\GitHub\bioeref`. Run the command 
+By default, the repository should be at `C:\Users\<user>\Documents\GitHub\aeroref`. Run the command 
 ```
-cd Documents\GitHub\bioeref
+cd Documents\GitHub\aeroref
 ```
 You should now see that the beginning of the line reads the correct location referenced previously. 
 
@@ -72,7 +72,7 @@ sudo sh -c 'echo -e "[shiftkey-packages]\nname=GitHub Desktop\nbaseurl=https://r
 ```
 sudo dnf install github-desktop
 ```
- Once installed, login using the GitHub account with which you have collaborator access to the bioeref repository. Once logged in clone the bioeref repository.
+ Once installed, login using the GitHub account with which you have collaborator access to the aeroref repository. Once logged in clone the aeroref repository.
 
 Download NodeJS by running 
 ```
@@ -92,7 +92,7 @@ sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/shiftkey-package
 ```
 sudo apt update && sudo apt install github-desktop
 ```
-Once installed, login using the GitHub account with which you have collaborator access to the bioeref repository. Once logged in clone the bioeref repository.
+Once installed, login using the GitHub account with which you have collaborator access to the aeroref repository. Once logged in clone the aeroref repository.
 
 Download NodeJS by running 
 ```
@@ -108,13 +108,13 @@ to also install Node Package Manager/NPM.
 
 Open your terminal and go to the correct directory with 
 ```
-cd ~/Documents/GitHub/bioeref
+cd ~/Documents/GitHub/aeroref
 ``` 
 or 
 ```
-cd $HOME/Documents/GitHub/bioeref
+cd $HOME/Documents/GitHub/aeroref
 ```
-<u>Note</u>: this is the default location for the mechref repository. If you changed the default location when installing GitHub desktop, these commands won't work. Instead, use the location you chose.
+<u>Note</u>: this is the default location for the aeroref repository. If you changed the default location when installing GitHub desktop, these commands won't work. Instead, use the location you chose.
 
 Install all dependencies by running 
 ```
@@ -124,12 +124,12 @@ npm install
 <u>Optional</u>:
 For easy access, consider creating a symbolic link in your home directory by running:
 ```
-ln -s $HOME/Documents/GitHub/bioeref ./bioeref
+ln -s $HOME/Documents/GitHub/aeroref ./aeroref
 ```
 
 Now, everytime you launch the terminal, you should be able to access the correct directory with 
 ```
-cd mechref
+cd aeroref
 ```
 
 ### Running the server
@@ -148,7 +148,7 @@ To stop the application, close the terminal window or run `Ctrl + C`.
 
 ### Installing required programs
 
-Download <a href="https://github.com/apps/desktop">GitHub Desktop</a>. Once installed, login using the GitHub account with which you have collaborator access to the bioeref repository. Once logged in clone the bioeref repository.
+Download <a href="https://github.com/apps/desktop">GitHub Desktop</a>. Once installed, login using the GitHub account with which you have collaborator access to the aeroref repository. Once logged in clone the aeroref repository.
 
 Download <a href="https://nodejs.org/en/download/prebuilt-installer">NodeJS</a>. By default, the installer should also install Node Package Manager/NPM, but double check that is the case.
 
@@ -156,13 +156,13 @@ Download <a href="https://nodejs.org/en/download/prebuilt-installer">NodeJS</a>.
 
 Open your terminal and go to the correct directory with 
 ```
-cd ~/Documents/GitHub/bioeref
+cd ~/Documents/GitHub/aeroref
 ``` 
 or 
 ```
-cd $HOME/Documents/GitHub/bioeref
+cd $HOME/Documents/GitHub/aeroref
 ```
-<u>Note</u>: this is the default location for the mechref repository. If you changed the default location when installing GitHub desktop, these commands won't work. Instead, use the location you chose.
+<u>Note</u>: this is the default location for the aeroref repository. If you changed the default location when installing GitHub desktop, these commands won't work. Instead, use the location you chose.
 
 Install all dependencies by running 
 ```
@@ -172,12 +172,12 @@ npm install
 <u>Optional</u>:
 For easy access, consider creating a symbolic link in your home directory by running:
 ```
-ln -s $HOME/Documents/GitHub/bioeref ./bioeref
+ln -s $HOME/Documents/GitHub/aeroref ./aeroref
 ```
 
 Now, everytime you launch the terminal, you should be able to access the correct directory with 
 ```
-cd mechref
+cd aeroref
 ```
 
 ### Running the server
