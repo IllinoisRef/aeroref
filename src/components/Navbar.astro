@@ -199,13 +199,12 @@ navbar-nav{
     background-color: white;
     }
 
-.statics-menu{
-    columns: 3;
+.control-menu{
+    columns: 2;
     }
 
-
 @media (width <= 768px){
-    .statics-menu{
+    .control-menu{
     columns: 2;
     }
     }
@@ -351,8 +350,34 @@ ol li:hover::marker{
 </a>
 </li>
 
+<!-- NEED ONE OF THESE FOR EACH COURSE (FIXME: SHOULD BE AUTO-GENERATED) -->
 
-<!-- ADD YOUR COURSE HERE -->
+<li class="dropdown mega nav-item"  class-value="control">
+    <a class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-label="About" class-value="control">
+        <span>Aerospace control systems</span>
+    </a>
+    <div class="dropdown-menu tile-list px-2" id="mainnav-control">
+        <div class="d-flex">
+            <section class="tile menu white-box col">
+            <h2><a href="/control" aria-label="About">Aerospace control systems</a></h2>
+                <ol style="column-fill: balance;" class="course-menu control-menu">
+                    <li><a href="/control/pid">PID controllers</a></li>
+                    <li><a href="/control/state-space-models">State space models</a></li>
+                    <li><a href="/control/matrix-exponential">The matrix exponential function</a></li>
+                    <li><a href="/control/stability">Asymptotic stability</a></li>
+                    <li><a href="/control/eigenvalue-placement">Eigenvalue placement</a></li>
+                    <li><a href="/control/optimal-controllers">Optimal controllers</a></li>
+                    <li><a href="/control/state-estimation">State estimation</a></li>
+                    <li><a href="/control/optimal-observers">Optimal observers</a></li>
+                    <li><a href="/control/tracking">Reference tracking</a></li>
+                </ol>
+            </section>
+        </div>
+    </div>
+</li>
+
+
+
 </ul>
 <span class="navbar-text d-flex flex-row justify-content-center align-items-center" style="padding: 8px 10px 10px 10px;"><a class="me-2 fw-bold nav-link fontsize-11" href="/about">About</a></span>
 <span class="navbar-text d-flex flex-row justify-content-center align-items-center theme-toggler" style="padding: 8px 10px 10px 10px;" onclick="toggle_theme();" >
