@@ -1,5 +1,4 @@
 svelte.config.json
-astro.config.mjs
 tsconfig.json
 
 __pycache__
