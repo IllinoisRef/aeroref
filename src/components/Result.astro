@@ -1,0 +1,23 @@
+---
+const { id, title } = Astro.props;
+---
+
+<style>
+    .background-yellow{
+        background-color: #f0f0d0;
+        border: 1px solid #444;
+        border-radius: 5px;
+    }
+</style>
+
+<div id={id ? id : undefined} class="background-yellow overflow-hidden my-2 text-black">
+    { title &&
+        <div class="mb-2 px-2">
+            <span set:html={`<strong>${title}</strong>`} style="font-variant: small-caps;"></span>{id && <small>{` #${id}`}</small>}
+        </div>
+    }
+
+    <div class="w-100 p-2" style="overflow-y: hidden; overflow-x: auto;">
+        <slot />
+    </div>
+</div>
