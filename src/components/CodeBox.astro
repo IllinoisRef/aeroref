@@ -85,9 +85,7 @@ const {code = "", language="", closed_by_default="False", id="", closed_height=6
 </div>
 
 <pre class="hljs px-3" style="cursor: copy;" onclick="copy_to_clipboard(this);" >
-    <code class={language != "" ? "language-" + language : ""} style="white-space: pre-line; " onload="console.log(this);" id={id ? `code-${id}` : ""}>
-        {code}
-    </code>
+<code class={language != "" ? "language-" + language : ""} style="white-space: pre; " id={id ? `code-${id}` : ""}>{code}</code>
 </pre>
 
 <script is:inline define:vars={{closed_by_default, id, closed_height}}>
