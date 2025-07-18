@@ -1,0 +1,8 @@
+---  
+const { toc } = Astro.props;
+import NavtreeItem from '../components/NavtreeItem.astro';
+---
+
+{toc && toc.length > 0 && toc.map((heading: any) => (
+    <NavtreeItem heading={heading} />
+))}

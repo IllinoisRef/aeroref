@@ -1,0 +1,25 @@
+---  
+const { heading } = Astro.props;
+
+// Generate CSS class based on depth
+const getDepthClass = (depth: number) => {
+  if (depth === 1) return 'section';
+  if (depth === 2) return 'subsection';
+  return 'sub'.repeat(depth - 1) + 'section';
+};
+
+const depthClass = getDepthClass(heading.depth);
+---
+
+<li class='list-group-item py-0'>
+    <a class={`text-decoration-none ${depthClass}`} href={`#${heading.id}`}>
+        {heading.title}
+    </a>
+    {heading.children.length > 0 && (
+        <ul class='list-group list-group-flush py-0'>
+            {heading.children.map((subheading: any) => (
+                <Astro.self heading={subheading} />
+            ))}
+        </ul>
+    )}
+</li>
